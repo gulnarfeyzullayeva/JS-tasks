@@ -24,9 +24,35 @@
 // console.log(days);
 
 // Task-07
-let num = 37;
-console.log(num**5);
-console.log(num%3);
+// let num = 37;
+// console.log(num**5);
+// console.log(num%3);
+
+// Task-08
+// let firstName = "Gulnar";
+// let lastName = "Feyzullayeva";
+// console.log(`Sizin adınız ${firstName} ${lastName}. Tanışlığımıza çox şadam!`);
+
+// Task-09
+// let firstName = "Gulnar";
+// let lastName = "Feyzullayeva";
+// console.log(`Sizi bir daha görməyimizə şadıq, ${firstName} ${lastName}`);
+
+// Task-10
+// let fullName = "Gulnar Feyzullayeva";
+// console.log(fullName.length);
+
+// Task-11 ?
+
+// Task-12 ?
+// let fullName = prompt("Tam adinizi daxil edin");
+// console.log();
+
+// Task-13
+let name = prompt("Adinizi daxil edin");
+console.log(`Salam ${name}`);
+
+
 
 
 
