@@ -49,8 +49,63 @@
 // console.log();
 
 // Task-13
-let name = prompt("Adinizi daxil edin");
-console.log(`Salam ${name}`);
+// let name = prompt("Adinizi daxil edin");
+// console.log(`Salam ${name}`);
+
+// Task-14
+// let a = Number(prompt("Eded daxil edin"));
+// let b = Number(prompt("Eded daxil edin"));
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
+
+// Task-15 ?
+// let a = 12345;
+// let b = 98765;
+
+// Task-16
+// "" + 1 + 0 = "10"
+// "" - 1 + 0 = -1
+// "true" - false = NaN
+// 6 / "3" = 2
+// 4 + 5 + "px" = 9px
+// "$" + 4 + 5 = $45
+// "4" - 2 = 2
+// NaN + "px" = NaN
+// 7 / 0 = Infinity
+// "-9" + 5 = "-95"
+// "-9" - 5 = -14
+// null + 1 = 1
+// undefined + 1 = NaN
+
+// Task-17
+// let number = prompt("Dord reqemli eded daxil edin");
+// let a = Number(number[0]);
+// let b = Number(number[1]);
+// let c = Number(number[2]);
+// let d = Number(number[3]);
+// console.log(a + b + c + d);
+
+// Task-18
+// let fullName = prompt("Tam adinizi daxil edin");
+// console.log(`Salam, ${fullName}!`);
+
+// Task-19 ?
+// let price = prompt("Qiymeti daxil edin");
+
+// Task-20
+// let salary = prompt("Emek haqqi meblegini daxil edin");
+// console.log(salary*0.87);
+
+// Task-21 ?
+
+// Task-22
+let price = prompt("Meblegi daxil edin");
+let time = prompt("Muddeti daxil edin");
+let percent = prompt("Faiz derecesini daxil edin");
+console.log((price*percent/100)*time);
+
 
 
 
