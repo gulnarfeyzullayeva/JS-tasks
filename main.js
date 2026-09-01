@@ -43,10 +43,14 @@
 // console.log(fullName.length);
 
 // Task-11 ?
+// let fullName = "Gulnar Feyzullayeva";
+// let [name, surname] = fullName.split(" ");
+// console.log(`${name[0]} ${surname[0]}`);
 
 // Task-12 ?
-// let fullName = prompt("Tam adinizi daxil edin");
-// console.log();
+// let fullName = prompt("Tam adinizi daxil edin (Ad Soyad formatinda)");
+// let [name, surname] = fullName.split(" ");
+// console.log(`${surname} ${name}`);
 
 // Task-13
 // let name = prompt("Adinizi daxil edin");
@@ -60,9 +64,11 @@
 // console.log(a * b);
 // console.log(a / b);
 
-// Task-15 ?
+// Task-15
 // let a = 12345;
 // let b = 98765;
+// let c = String(a*b);
+// console.log(c[5]);
 
 // Task-16
 // "" + 1 + 0 = "10"
@@ -92,25 +98,63 @@
 // console.log(`Salam, ${fullName}!`);
 
 // Task-19 ?
-// let price = prompt("Qiymeti daxil edin");
+let price = prompt("Qiymeti daxil edin");
+let [manat, qepik] = price.split(".");
+console.log(`${manat} manat ${qepik} qepik`);
 
 // Task-20
 // let salary = prompt("Emek haqqi meblegini daxil edin");
 // console.log(salary*0.87);
 
 // Task-21 ?
+// let fullName = prompt("Soyad, ad ve ata adinizi daxil edin");
+// let words = fullName.split(" ");
+// console.log(`${words[0]} ${words[1][0]}. ${words[2][0]}.`);
 
 // Task-22
-let price = prompt("Meblegi daxil edin");
-let time = prompt("Muddeti daxil edin");
-let percent = prompt("Faiz derecesini daxil edin");
-console.log((price*percent/100)*time);
+// let price = prompt("Meblegi daxil edin");
+// let time = prompt("Muddeti daxil edin");
+// let percent = prompt("Faiz derecesini daxil edin");
+// console.log((price*percent/100)*time);
 
+// Task-23
+// let value = 10 || 20;
+// console.log(value < 19);
+// console.log(value <= 10);
+// console.log(value == 10);
+// console.log(value === 10);
+// console.log(value !==20);
 
+// Task-24
+// let age = prompt("Yasinizi daxil edin");
+// if (age < 18) {
+//     console.log("Access denied");   
+// } else {
+//     console.log("Access granted"); 
+// }
 
+// Task-25
+// let numbers = prompt("3 ikireqemli eded daxil edin");
+// let [a, b, c] = numbers.split(" ");
+// a = +a;
+// b = +b;
+// c = +c;
+// if (a===b || b===c || c===a) {
+//   console.log("Error");
+// } else if ((a > b && b > c) || (c > b && b > a)) {
+//   console.log(b);
+// } else if ((b > a && a > c) || (c > a && a > b)) {
+//   console.log(a);
+// } else {
+//   console.log(c);
+// }
 
-
-
-
+// Task-26
+// let year = Number(prompt("Il daxil edin"));
+// if (year % 4 === 0) {
+//     console.log("İl uzun ildir");
+// } else {
+//     console.log("İl uzun il deyil");
+// }
 
 
