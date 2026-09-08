@@ -311,25 +311,25 @@
 // }
 
 // Task-40 
-let a = 5, b = 3, op = "*";
-switch (op) {
-  case "+":
-    console.log(a + b);
-    break;
-  case "-":
-    console.log(a - b);
-    break;
-  case "*":
-    console.log(a * b);
-    break;
-  case "/":
-    if (b !== 0) {
-      console.log(a / b);
-    } else {
-      console.log("Sifira bolmek olmaz");
-    }
-    break;
-  default:
-    console.log("Yanlis operator daxil edilib");
-}
+// let a = 5, b = 3, op = "*";
+// switch (op) {
+//   case "+":
+//     console.log(a + b);
+//     break;
+//   case "-":
+//     console.log(a - b);
+//     break;
+//   case "*":
+//     console.log(a * b);
+//     break;
+//   case "/":
+//     if (b !== 0) {
+//       console.log(a / b);
+//     } else {
+//       console.log("Sifira bolmek olmaz");
+//     }
+//     break;
+//   default:
+//     console.log("Yanlis operator daxil edilib");
+// }
 
