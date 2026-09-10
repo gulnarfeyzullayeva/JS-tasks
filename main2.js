@@ -57,13 +57,89 @@
 // let arr = text.split(" ")
 
 // Task-09
-let text = "Hell.o Wor.ld.";
-for (let i = 0; i < text.length; i++ ) {
-    if (text[i] === ".") {
-        console.log(i);
-        break
-    }
+// let text = "Hell.o Wor.ld.";
+// for (let i = 0; i < text.length; i++ ) {
+//     if (text[i] === ".") {
+//         console.log(i);
+//         break
+//     }
+// }
+
+// Task-12
+// let n = 100;
+// while (n <= 500) {
+//     if (n % 5 === 2) {
+//         console.log(n);
+//     }
+//     n++
+// }
+
+// Task-13
+// let n = prompt("Tam eded daxil edin");
+// let a = n.split("");
+// let sum = 0;
+// let i = 0;
+// while (i < a.length) {
+//     sum = sum + +a[i]
+//     i++
+// }
+// console.log(sum);
+
+// Task-14
+// (artan sira)
+// let n = +prompt("Eded daxil edin");
+// let i = 1;
+// while (i <= n) {
+//     if (n % i === 0) {
+//     console.log(i);
+//     }
+//     i++
+// }
+
+// (azalan sira)
+// let n = +prompt("Eded daxil edin");
+// let i = n;
+// while (i >= 1) {
+//     if (n % i === 0) {
+//     console.log(i);
+//     }
+//     i--
+// }
+
+// Task-15
+// let a = 1;
+// while (a <= 30) {
+//     if (a % 3 === 0 && a % 5 === 0) {
+//         console.log(a);
+//     }
+//     a++
+// }
+
+// Task-16 ??(sondaki - silinmesi)
+// let word = prompt("Soz daxil edin");
+// let a = word.split("")
+// let b = "";
+// for (let i = 0; i < word.length; i++) {
+//     if (a[i]) {
+//         b = b + a[i] + "-";
+//     }
+// }
+// console.log(b);
+
+
+// Task-17
+// let text = prompt("Metn daxil edin");
+// let s = 0;
+// for (let i = 0; i < text.length; i++) {
+//     if (text[i] === " ") {
+//         s = s + 1
+//     }
+// }
+// console.log(s);
+
+// Task-18
+let a = +prompt("Tam eded daxil edin");
+let b = +prompt("Tam eded daxil edin");
+for (let i = a; i <= b; i++) {
+    console.log(i ** 2);
 }
-
-
-
