@@ -65,6 +65,20 @@
 //     }
 // }
 
+// Task-11 (palindrom)
+// let str = prompt("Söz daxil edin:");
+// let result = true;
+// for (let i = 0; i < str.length; i++) {
+//     let lastindex = str.length -1;
+// if{
+//     // if(str.[i] !==str[lastIndex-i]){
+}
+// }
+// // }
+// console.log(word === reversedWord);
+
+
+
 // Task-12
 // let n = 100;
 // while (n <= 500) {
@@ -116,15 +130,17 @@
 // }
 
 // Task-16 ??(sondaki - silinmesi)
-// let word = prompt("Soz daxil edin");
-// let a = word.split("")
-// let b = "";
-// for (let i = 0; i < word.length; i++) {
-//     if (a[i]) {
-//         b = b + a[i] + "-";
-//     }
-// }
-// console.log(b);
+let word = prompt("Soz daxil edin");
+let a = word.split("");
+let b = "";
+for (let i = 0; i < word.length; i++) {
+    if (a[i]) {
+        b = b + a[i] + "-";
+    }
+}
+console.log(b.slice(0, -1));
+
+// split and join
 
 
 // Task-17
@@ -138,8 +154,8 @@
 // console.log(s);
 
 // Task-18
-let a = +prompt("Tam eded daxil edin");
-let b = +prompt("Tam eded daxil edin");
-for (let i = a; i <= b; i++) {
-    console.log(i ** 2);
-}
+// let a = +prompt("Tam eded daxil edin");
+// let b = +prompt("Tam eded daxil edin");
+// for (let i = a; i <= b; i++) {
+//     console.log(i ** 2);
+// }
