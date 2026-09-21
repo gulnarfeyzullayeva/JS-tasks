@@ -72,7 +72,6 @@
 //     let lastindex = str.length -1;
 // if{
 //     // if(str.[i] !==str[lastIndex-i]){
-}
 // }
 // // }
 // console.log(word === reversedWord);
@@ -130,15 +129,15 @@
 // }
 
 // Task-16 ??(sondaki - silinmesi)
-let word = prompt("Soz daxil edin");
-let a = word.split("");
-let b = "";
-for (let i = 0; i < word.length; i++) {
-    if (a[i]) {
-        b = b + a[i] + "-";
-    }
-}
-console.log(b.slice(0, -1));
+// let word = prompt("Soz daxil edin");
+// let a = word.split("");
+// let b = "";
+// for (let i = 0; i < word.length; i++) {
+//     if (a[i]) {
+//         b = b + a[i] + "-";
+//     }
+// }
+// console.log(b.slice(0, -1));
 
 // split and join
 

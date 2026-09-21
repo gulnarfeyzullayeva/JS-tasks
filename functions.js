@@ -20,7 +20,7 @@
 //     if (age < 18) {
 //         console.log("Qeydiyyat üçün yaşınız minimum 18 olmalıdır.");
 //     } else {
-//         fullName = fullName.trim();
+//         fullName = fullName.trim(); 
 //         console.log(`Xoş gəldiniz, ${fullName}! Qeydiyyat uğurla tamamlandı.`);
 //     }
 // } 
@@ -29,13 +29,32 @@
 
 
 // Task-03
-function calculateTaxiFare(distanceKm) {
-    let price = distanceKm * 1.5;
-    if (price < 3) {
-        console.log("Ödəniləcək məbləğ: 3 AZN ");
-    } else {
-        console.log(`Ödəniləcək məbləğ: ${price} AZN`);
-    }
+// function calculateTaxiFare(distanceKm) {
+//     let price = distanceKm * 1.5;
+//     if (price < 3) {
+//         console.log("Ödəniləcək məbləğ: 3 AZN ");
+//     } else {
+//         console.log(`Ödəniləcək məbləğ: ${price} AZN`);
+//     }
+// }
+// calculateTaxiFare(1);
+// calculateTaxiFare(5);
+
+// Task-04
+function calculateTicketPrice(age, isStudent) {
+    let price = 10;
+    if (age < 6) {
+        return "Bilet pulsuzdur.";
+    } else if (isStudent === true) {
+        const lastPrice = price - price*30/100;
+        return `Bilet qiyməti: ${lastPrice} AZN`
+    } else if (age >= 60) {
+        const lastPrice = price - price*50/100;
+        return `Bilet qiyməti: ${lastPrice} AZN`
+    } 
+    return `Bilet qiyməti: ${price} AZN`;
 }
-calculateTaxiFare(1);
-calculateTaxiFare(5);
+console.log(calculateTicketPrice(4, false));
+console.log(calculateTicketPrice(22, true));
+console.log(calculateTicketPrice(65, false));
+console.log(calculateTicketPrice(30, false));
