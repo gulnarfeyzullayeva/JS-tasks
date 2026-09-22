@@ -41,20 +41,53 @@
 // calculateTaxiFare(5);
 
 // Task-04
-function calculateTicketPrice(age, isStudent) {
-    let price = 10;
-    if (age < 6) {
-        return "Bilet pulsuzdur.";
-    } else if (isStudent === true) {
-        const lastPrice = price - price*30/100;
-        return `Bilet qiyməti: ${lastPrice} AZN`
-    } else if (age >= 60) {
-        const lastPrice = price - price*50/100;
-        return `Bilet qiyməti: ${lastPrice} AZN`
-    } 
-    return `Bilet qiyməti: ${price} AZN`;
-}
-console.log(calculateTicketPrice(4, false));
-console.log(calculateTicketPrice(22, true));
-console.log(calculateTicketPrice(65, false));
-console.log(calculateTicketPrice(30, false));
+// function calculateTicketPrice(age, isStudent) {
+//     let price = 10;
+//     if (age < 6) {
+//         return "Bilet pulsuzdur.";
+//     } else if (isStudent === true) {
+//         const lastPrice = price - price*30/100;
+//         return `Bilet qiyməti: ${lastPrice} AZN`
+//     } else if (age >= 60) {
+//         const lastPrice = price - price*50/100;
+//         return `Bilet qiyməti: ${lastPrice} AZN`
+//     } 
+//     return `Bilet qiyməti: ${price} AZN`;
+// }
+// console.log(calculateTicketPrice(4, false));
+// console.log(calculateTicketPrice(22, true));
+// console.log(calculateTicketPrice(65, false));
+// console.log(calculateTicketPrice(30, false));
+
+// Task-05
+// const aznToUsd = (price) => console.log(price / 1.70);
+// aznToUsd(170);
+
+// Task-06
+// const checkAccess = (age) => (age >= 18) ? "Giriş uğurludur" : "Giriş qadağandır";
+// checkAccess(20);
+// checkAccess(15);
+
+
+
+// Arrow Functions (Ev Tapşırıqları):
+
+// Task-01
+// const celsiusToFahrenheit = (Celsius)=> (Celsius * 1.8) + 32;
+// console.log(celsiusToFahrenheit(0));
+// console.log(celsiusToFahrenheit(25));
+
+// Task-02
+// const calculateFuelConsumption = (distance, liters)=> (liters / distance) * 100;
+// console.log(calculateFuelConsumption(500, 40));
+
+// Task-03
+// const getTotalWithDelivery = (orderAmount)=> (orderAmount >= 50) ? orderAmount : orderAmount + 5;
+// console.log(getTotalWithDelivery(60));
+// console.log(getTotalWithDelivery(30));
+
+// Task-04
+const getGrade = (score) => (score >= 90) ? "Əla" : (score >= 70 ) ? "Yaxşı" : (score >= 50) ? "Kafi": "Kəsildiniz";
+console.log(getGrade(95));
+console.log(getGrade(75));
+console.log(getGrade(40));
