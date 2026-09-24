@@ -87,7 +87,47 @@
 // console.log(getTotalWithDelivery(30));
 
 // Task-04
-const getGrade = (score) => (score >= 90) ? "Əla" : (score >= 70 ) ? "Yaxşı" : (score >= 50) ? "Kafi": "Kəsildiniz";
-console.log(getGrade(95));
-console.log(getGrade(75));
-console.log(getGrade(40));
+// const getGrade = (score) => (score >= 90) ? "Əla" : (score >= 70 ) ? "Yaxşı" : (score >= 50) ? "Kafi": "Kəsildiniz";
+// console.log(getGrade(95));
+// console.log(getGrade(75));
+// console.log(getGrade(40));
+
+
+
+// Callback tasks
+
+// Task-01
+// const sendEmail = () => "✉️ Xoş gəldiniz məktubu göndərildi!";
+// const registerUser = (username, callback)=> {
+//     console.log(`👤 ${username} sistemə əlavə olundu.`);
+//     callback();
+// }
+// registerUser("Gulnar", sendEmail)
+
+// Task-02
+// const onSuccess = (finalPrice)=> `✅ Kupon tətbiq edildi! Yekun qiymət: ${finalPrice} AZN`;
+// const onError = (msg)=> `❌ Xəta: ${msg}`;
+// const applyCoupon = (code, totalPrice, onSuccess, onError)=> {
+//     if (code === "KOD10") {
+//         finalPrice = totalPrice - 10
+//         console.log(onSuccess(finalPrice));
+//     } else{
+//         console.log(onError("Keçərsiz kupon kodu!"));
+//     }
+// }
+// applyCoupon("KOD10", 100, onSuccess, onError)
+
+// Task-03
+const onWin = (heroName, damage)=> `⚔️ ${heroName} qalib gəldi! Canavardan ${damage} xal üstün oldu!`;
+const onLose = (heroName, damage)=> `💀 ${heroName} uduzdu! Canavardan ${damage} xal geridə qaldı!`;
+const onDraw = ()=> "🛡️ Güclər bərabərdir! Döyüş bərabərə bitdi.";
+const attackMonster = (heroName, heroPower, monsterPower, onWin, onLose, onDraw)=> {
+    if (heroPower > monsterPower) {
+        console.log(onWin("Ironman", heroPower - monsterPower));
+    } else if (heroPower < monsterPower) {
+        console.log(onLose("Ironman", monsterPower - heroPower));
+    } else {
+        console.log(onDraw());
+    }
+}
+attackMonster("Ironman", 200, 100, onWin, onLose, onDraw)
