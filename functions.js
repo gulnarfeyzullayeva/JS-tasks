@@ -118,16 +118,65 @@
 // applyCoupon("KOD10", 100, onSuccess, onError)
 
 // Task-03
-const onWin = (heroName, damage)=> `⚔️ ${heroName} qalib gəldi! Canavardan ${damage} xal üstün oldu!`;
-const onLose = (heroName, damage)=> `💀 ${heroName} uduzdu! Canavardan ${damage} xal geridə qaldı!`;
-const onDraw = ()=> "🛡️ Güclər bərabərdir! Döyüş bərabərə bitdi.";
-const attackMonster = (heroName, heroPower, monsterPower, onWin, onLose, onDraw)=> {
-    if (heroPower > monsterPower) {
-        console.log(onWin("Ironman", heroPower - monsterPower));
-    } else if (heroPower < monsterPower) {
-        console.log(onLose("Ironman", monsterPower - heroPower));
+// const onWin = (heroName, damage)=> `⚔️ ${heroName} qalib gəldi! Canavardan ${damage} xal üstün oldu!`;
+// const onLose = (heroName, damage)=> `💀 ${heroName} uduzdu! Canavardan ${damage} xal geridə qaldı!`;
+// const onDraw = ()=> "🛡️ Güclər bərabərdir! Döyüş bərabərə bitdi.";
+// const attackMonster = (heroName, heroPower, monsterPower, onWin, onLose, onDraw)=> {
+//     if (heroPower > monsterPower) {
+//         console.log(onWin("Ironman", heroPower - monsterPower));
+//     } else if (heroPower < monsterPower) {
+//         console.log(onLose("Ironman", monsterPower - heroPower));
+//     } else {
+//         console.log(onDraw());
+//     }
+// }
+// attackMonster("Ironman", 200, 100, onWin, onLose, onDraw)
+
+
+// Task-1
+// const calculateTaxiFare = (distanceKm, isPeakHour, promoCode) => {
+//     let price = 2;
+//     let finalPrice = price + distanceKm * 0.8;
+//     if (isPeakHour) {
+//         finalPrice = finalPrice * 1.5;
+//     }
+//     if (promoCode === "AVTO10") {
+//         finalPrice = finalPrice - 2;
+//     }
+//     if (finalPrice > 3) {
+//         console.log(`${finalPrice} AZN`);
+//     } else {
+//         console.log(`3 AZN`);  
+//     }
+// }
+// calculateTaxiFare(2, true, "AVTO10")
+
+
+// Task-2
+// const calculator = (exam, quiz, attendance) => {
+//     totalScore = (exam * 0.6) + (quiz * 0.4);
+//     if (totalScore >= 51) {
+//         if (attendance >=70) {
+//             console.log(`İmtahandan keçdiniz! Yekun bal: ${totalScore}`);
+//         } else {
+//             console.log("Kəsildiniz: Davamiyyət yetərsizdir!");           
+//         }
+//     } else {
+//         console.log(`Kəsildiniz: Balınız yetərsizdir ${totalScore}`);
+//     }
+// }
+// calculator(50, 100, 80)
+
+// Task-3
+const printReceipt = (clientName, totalPrice, serviceFee) => `MÜŞTƏRİ: ${clientName} | Xidmət haqqı: ${serviceFee} AZN | Yekun ödəniş: ${totalPrice} AZN`;
+
+const processBill = (clientName, foodAmount, isVIP, printReceipt) => {
+    if (isVIP) {
+        serviceFee = 0;
     } else {
-        console.log(onDraw());
+        serviceFee = foodAmount * 0.1;
     }
+    totalPrice = foodAmount + serviceFee;
+    console.log(printReceipt(clientName, totalPrice, serviceFee));
 }
-attackMonster("Ironman", 200, 100, onWin, onLose, onDraw)
+processBill("Gulnar", 100, true, printReceipt)
