@@ -176,23 +176,23 @@
 //     } else {
 //         serviceFee = foodAmount * 0.1;
 //     }
-//     totalPrice = foodAmount + serviceFee;
+//     let totalPrice = foodAmount + serviceFee;
 //     console.log(printReceipt(clientName, totalPrice, serviceFee));
 // }
 // processBill("Gulnar", 100, true, printReceipt)
 
 // Task-4
-const onApproved = (monthlyPayment) => `Kredit təsdiqləndi! Aylıq ödənişiniz: ${monthlyPayment} AZN`;
-const onNeedGuarantor = (gap) => `Zamin tələb olunur! Çatışmayan aylıq gəlir: ${gap} AZN`;
-const onRejected = (reason) => `Kredit rədd edildi! Səbəb: ${reason}`;
-const checkCredit = (salary, requestedAmount, months, onApproved, onNeedGuarantor, onRejected) => {
-    monthlyPayment = requestedAmount / months;
-    if (monthlyPayment <= salary * 0.5) {
-        console.log(onApproved(monthlyPayment));
-    } else if (monthlyPayment < salary * 0.7) {
-        console.log(onNeedGuarantor(monthlyPayment - (salary * 0.5)));
-    } else {
-        console.log(onRejected("Aylıq ödəniş gəlirinizə görə çox yüksəkdir!"));
-    }
-}
-checkCredit(100, 300, 12, onApproved, onNeedGuarantor, onRejected)
+// const onApproved = (monthlyPayment) => `Kredit təsdiqləndi! Aylıq ödənişiniz: ${monthlyPayment} AZN`;
+// const onNeedGuarantor = (gap) => `Zamin tələb olunur! Çatışmayan aylıq gəlir: ${gap} AZN`;
+// const onRejected = (reason) => `Kredit rədd edildi! Səbəb: ${reason}`;
+// const checkCredit = (salary, requestedAmount, months, onApproved, onNeedGuarantor, onRejected) => {
+//     let monthlyPayment = requestedAmount / months;
+//     if (monthlyPayment <= salary * 0.5) {
+//         console.log(onApproved(monthlyPayment));
+//     } else if (monthlyPayment < salary * 0.7) {
+//         console.log(onNeedGuarantor(monthlyPayment - (salary * 0.5)));
+//     } else {
+//         console.log(onRejected("Aylıq ödəniş gəlirinizə görə çox yüksəkdir!"));
+//     }
+// }
+// checkCredit(100, 300, 12, onApproved, onNeedGuarantor, onRejected) 
