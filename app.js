@@ -167,16 +167,16 @@
 // console.log(area.getArea());
 
 // Task-09
-// const student = {
-//     id: 101,
-//     score: 85,
-//     status: "pending",
-// };
-// let keyToUpdate = "score";
-// let keyToDelete ="status";
-// student[keyToUpdate] = 95;
-// delete student[keyToDelete];
-// console.log(student);
+const student = {
+    id: 101,
+    score: 85,
+    status: "pending",
+};
+let keyToUpdate = "score";
+let keyToDelete ="status";
+student[keyToUpdate] = 95;
+delete student[keyToDelete];
+console.log(student);
 
 // Task-10
 // const bankAccount = {
@@ -248,18 +248,18 @@
 // console.log(course);
 
 // Task-16
-// function Product(title, price, discount = 0) {
-//     this.title=title;
-//     this.price=price;
-//     this.discount=discount;
-//     this.getFinalPrice = function() {
-//         return (this.price - (this.price * this.discount / 100)); 
-//     };
-// }
-// const product1= new Product("Computer", 2000, 20);
-// const product2= new Product("TV", 4000, 30);
-// console.log(product1.getFinalPrice());
-// console.log(product2.getFinalPrice());
+function Product(title, price, discount = 0) {
+    this.title=title;
+    this.price=price;
+    this.discount=discount;
+    this.getFinalPrice = function() {
+        return (this.price - (this.price * this.discount / 100)); 
+    };
+}
+const product1= new Product("Computer", 2000, 20);
+const product2= new Product("TV", 4000, 30);
+console.log(product1.getFinalPrice());
+console.log(product2.getFinalPrice());
 
 // Task-17 ???
 // const timer = {
