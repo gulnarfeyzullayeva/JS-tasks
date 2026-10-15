@@ -16,7 +16,7 @@
 
 /* =============== Tasks - 16 oct =============== */
 /* Task-1 */
-/* #colorBox {
+#colorBox {
     height: 250px;
     width: 250px;
 }
@@ -25,10 +25,10 @@
     width: 100px;
     color: black;
     margin-top: 10px;
-} */
+}
 
 /* Task-2 */
-/* .container {
+.container {
     display: flex;
     gap: 20px;
 }
@@ -37,27 +37,27 @@
     width: 200px;
     background-color: antiquewhite;
     border: 1px solid;
-} */
+}
 
 /* Task-3 */
-/* #circle {
+#circle {
     height: 250px;
     width: 250px;
     border-radius: 50%;
     background-color: cyan;
     margin: 50px;
-} */
+}
 
 /* Task-5 */
-/* #selection {
+#selection {
     height: 50px;
     width: 200px;
     font-size: 15px;
-} */
+}
 
 /* Task-7 */
-/* .box {
+.box {
     height: 250px;
     width: 250px;
     background-color: darkviolet;
-} */
+}
