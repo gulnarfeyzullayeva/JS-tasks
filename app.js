@@ -310,3 +310,116 @@ console.log(product2.getFinalPrice());
 //         if ()
 //     }
 // }
+
+
+
+// Task-class
+// const box = document.getElementById("box");
+// const btn = document.getElementById("btn");
+
+// btn.addEventListener("click", function(){
+//     box.style.backgroundColor="red";
+// })
+
+// btn.addEventListener("dblclick", function(){
+//     box.style.backgroundColor="blue";
+// })
+
+
+
+// =============== Tasks - 16 oct ===============
+// Task-1
+// const box = document.querySelector("#colorBox");
+// const btn = document.querySelector("#btn");
+
+// btn.addEventListener("click", function(){
+//     box.style.backgroundColor="purple";
+// })
+
+// Task-2
+// const card = document.querySelectorAll(".card");
+
+// card.forEach(card=>{
+//     card.addEventListener("click", function(){
+//         card.style.border="1px solid red";
+//     })
+// })
+
+// Task-3
+// const circle = document.getElementById("circle");
+
+// circle.addEventListener("dblclick", function(){
+//     circle.style.height="150px";
+//     circle.style.width="150px";
+//     circle.addEventListener("dblclick", function(){
+//     circle.style.height="250px";
+//     circle.style.width="250px";
+//     })
+// })
+
+// Task-4
+// const area = document.getElementById("area");
+// const text = document.getElementById("text");
+
+// area.addEventListener("input", function(){
+//     text.textContent=`Qalan simvol: ${100 - area.value.length}`
+// })
+
+// Task-5 ???
+// const select = document.getElementById("selection");
+// const white = document.getElementById("white");
+// const black = document.getElementById("black");
+// const blue = document.getElementById("blue");
+
+// white.addEventListener("change", function(){
+//     document.body.style.backgroundColor="white";
+// })
+// black.addEventListener("change", function(){
+//     document.body.style.backgroundColor="black";
+// })
+// blue.addEventListener("change", function(){
+//     document.body.style.backgroundColor="blue";
+// })
+
+// Task-6
+// const form = document.getElementById("form");
+// const text = document.getElementById("text");
+// const btn = document.getElementById("btn");
+
+// form.addEventListener("submit", (e)=> {
+//     e.preventDefault();
+//     if(text.value==""){
+//         console.log("Xeta!");
+//     } else {
+//         console.log("Ugurludur!");
+//     }
+// })
+
+// Task-7
+// const box = document.querySelector(".box");
+
+// box.addEventListener("mouseenter", function(){
+//     box.style.opacity="0.5";
+// })
+// box.addEventListener("mouseleave", function(){
+//     box.style.opacity="1";
+// })
+
+// Task-9
+// const text = document.getElementById("text");
+
+// text.addEventListener("keydown", (e)=> {
+//     if(e.code==="Enter") {
+//         console.log("Enter duymesine basildi!");
+//     }
+// })
+
+// Task-10
+const search = document.getElementById("search");
+const text = document.getElementById("text");
+const btn = document.getElementById("btn");
+const list = document.getElementById("list");
+
+btn.addEventListener("click", function(){
+    list.appendChild(btn)
+})

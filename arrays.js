@@ -27,7 +27,8 @@
 // Task-6
 // const arr = ["a", "b", "c", "d", "e"];
 // const arr2 = arr.slice(1,3);
-// console.log(arr2);
+// const arr3 = arr.splice(1,2);
+// console.log(arr);
 
 // Task-7 ***
 // const arr = [10,20,50,60];
@@ -178,3 +179,8 @@
 // users.splice(arr1, 1, {id: 2, name: "Leyla", status: "approved"});
 // console.log(users);
 
+// const class5A = ["Aynur", "Babek", "Ceyran"];
+// const class5B = ["Davud", "Elmira", "Fatima"];
+
+// const class5Aand5B = [...class5A, ...class5B, "Gulnar"];
+// console.log(class5Aand5B);
